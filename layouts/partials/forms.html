@@ -1,0 +1,61 @@
+<section class="modal-form order-form" id="modalForm">
+
+    <div class="modal-form__wrapper">
+
+        <span class="modal-form__escape" id="btnDisableModalForm">{{ .Site.Params.form_modal_close_btn }}</span>
+
+        <form id="consultForm" class="hidden">
+            <header class="modal-form__header">{{ .Site.Params.form_consult_header }}</header>
+            <p class="modal-form__subheader">{{ .Site.Params.form_consult_subheader }}</p>
+            <input id="consultFormInputName" form="consultForm" class="order-form__input" required="" type="text" name="name" placeholder="{{ .Site.Params.form_input_name }}" autocomplete="off">
+            <input id="consultFormInputPhone" form="consultForm" class="order-form__input" required="" type="phone" name="phone" placeholder="{{ .Site.Params.form_input_phone }}" autocomplete="off">
+            <div id="consultFormSubmit" class="order-form__button">{{ .Site.Params.form_consult_submit_btn }}</div>
+        </form>
+        <div class="order-form_thanks hidden" id="consultFormThanksText">{{ .Site.Params.form_consult_thanks_text }}</div>
+        <div class="order-form_errors hidden" id="consultFormErrorsText">{{ .Site.Params.form_consult_errors_text }}</div>
+
+        <form id="testForm" class="hidden" name="testForm">
+            <header class="modal-form__header">{{ .Site.Params.form_test_header }}</header>
+            <p class="modal-form__subheader">{{ .Site.Params.form_test_subheader }}</p>
+            <input id="testFormInputName" form="testForm" class="order-form__input" required="" type="text" name="name" placeholder="{{ .Site.Params.form_input_name }}" autocomplete="off">
+            <input id="testFormInputPhone" form="testForm" class="order-form__input" required="" type="phone" name="phone" placeholder="{{ .Site.Params.form_input_phone }}" autocomplete="off">
+            <input id="testFormInputEmail" form="testForm" class="order-form__input" required="" type="email" name="email" placeholder="{{ .Site.Params.form_input_email }}" autocomplete="off">
+            <div id="testFormSubmit" class="order-form__button">{{ .Site.Params.form_test_submit_btn }}</div>
+        </form>
+        <div class="order-form_thanks hidden" id="testFormThanksText">{{ .Site.Params.form_test_thanks_text }}</div>
+        <div class="order-form_errors hidden" id="testFormErrorsText">{{ .Site.Params.form_test_errors_text }}</div>
+
+        <form id="orderForm" class="hidden" name="orderForm">
+            <header class="modal-form__header">{{ .Site.Params.form_order_header }}</header>
+            <p class="modal-form__subheader">{{ .Site.Params.form_order_subheader }}</p>
+            <input id="orderFormInputName" form="orderForm" class="order-form__input" required="" type="text" name="name" placeholder="{{ .Site.Params.form_input_name }}" autocomplete="off">
+            <input id="orderFormInputPhone" form="orderForm" class="order-form__input" required="" type="phone" name="phone" placeholder="{{ .Site.Params.form_input_phone }}" autocomplete="off">
+            <input id="orderFormInputEmail" form="orderForm" class="order-form__input" required="" type="email" name="email" placeholder="{{ .Site.Params.form_input_email }}" autocomplete="off">
+            <div id="orderFormSubmit" class="order-form__button">{{ .Site.Params.form_order_submit_btn }}</div>
+        </form>
+        <div class="order-form_thanks hidden" id="orderFormThanksText">{{ .Site.Params.form_order_thanks_text }}</div>
+        <div class="order-form_errors hidden" id="orderFormErrorsText">{{ .Site.Params.form_order_errors_text }}</div>
+
+        <form id="priceListEquipmentForm" class="hidden" name="priceListEquipmentForm">
+            <header class="modal-form__header">{{ .Site.Params.form_price_list_equipment_header }}</header>
+            <p class="modal-form__subheader">{{ .Site.Params.form_price_list_equipment_subheader }}</p>
+            <input id="priceListEquipmentFormInputName" form="priceListEquipmentForm" class="order-form__input" required="" type="text" name="name" placeholder="{{ .Site.Params.form_input_name }}" autocomplete="off">
+            <input id="priceListEquipmentFormInputPhone" form="priceListEquipmentForm" class="order-form__input" required="" type="phone" name="phone" placeholder="{{ .Site.Params.form_input_phone }}" autocomplete="off">
+            <input id="priceListEquipmentFormInputEmail" form="priceListEquipmentForm" class="order-form__input" required="" type="email" name="email" placeholder="{{ .Site.Params.form_input_email }}" autocomplete="off">
+            <div id="priceListEquipmentFormSubmit" class="order-form__button">{{ .Site.Params.form_price_list_equipment_submit_btn }}</div>
+        </form>
+        <div class="order-form_thanks hidden" id="priceListEquipmentFormThanksText">{{ .Site.Params.form_price_list_equipment_thanks_text }}</div>
+        <div class="order-form_errors hidden" id="priceListEquipmentFormErrorsText">{{ .Site.Params.form_price_list_equipment_errors_text }}</div>
+
+        <form id="priceListServiceForm" class="hidden" name="priceListServiceForm">
+            <header class="modal-form__header">{{ .Site.Params.form_price_list_service_header }}</header>
+            <p class="modal-form__subheader">{{ .Site.Params.form_price_list_service_subheader }}</p>
+            <input id="priceListServiceFormInputName" form="priceListServiceForm" class="order-form__input" required="" type="text" name="name" placeholder="{{ .Site.Params.form_input_name }}" autocomplete="off">
+            <input id="priceListServiceFormInputPhone" form="priceListServiceForm" class="order-form__input" required="" type="phone" name="phone" placeholder="{{ .Site.Params.form_input_phone }}" autocomplete="off">
+            <input id="priceListServiceFormInputEmail" form="priceListServiceForm" class="order-form__input" required="" type="email" name="email" placeholder="{{ .Site.Params.form_input_email }}" autocomplete="off">
+            <div id="priceListServiceFormSubmit" class="order-form__button">{{ .Site.Params.form_price_list_service_submit_btn }}</div>
+        </form>
+        <div class="order-form_thanks hidden" id="priceListServiceFormThanksText">{{ .Site.Params.form_price_list_service_thanks_text }}</div>
+        <div class="order-form_errors hidden" id="priceListServiceFormErrorsText">{{ .Site.Params.form_price_list_service_errors_text }}</div>
+    </div>
+</section>

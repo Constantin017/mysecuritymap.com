@@ -1,0 +1,60 @@
+.menu {
+    &.hidden {
+        display: none;
+    }
+    position: fixed;
+    top: 80px;
+    left:0;
+    right:0;
+    bottom:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: white;
+    padding: 10%;
+    text-align: center;
+    a {
+        width: 300px;
+        height: 2em;
+        display: block;
+        margin: 0 auto;
+        line-height: 2em;
+        font-size: 1.3em;
+        font-weight: normal;
+        color: $base-black;
+        background-color: #fff;
+        text-decoration: none;
+        text-align: left;
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:visited {
+            background-color: #fff;
+            text-decoration: none;
+            color: $base-black;
+            cursor: pointer;
+        }
+    }
+}
+
+#gotop {
+    position: fixed;
+    display: none;
+    bottom: 25px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    background: #fff;
+    text-align: center;
+    z-index: 1000;
+    font-size: 24px;
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+        color: $base-color;
+    }
+}

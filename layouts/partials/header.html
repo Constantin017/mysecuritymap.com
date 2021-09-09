@@ -1,0 +1,60 @@
+{{ $defLang := "ua" }}
+<header id="top" class="wow fadeIn" style="opacity: 1; visibility: visible; animation-name: fadeIn;">
+
+    {{ if eq .Site.Language.Lang $defLang }}
+    <a href="/" id="logo">
+    {{ else }}
+        <a href="/{{.Site.Language.Lang }}/" id="logo">
+    {{ end }}
+        <img height="51" width="135" src="/imgages/branding/mysmap.big.png" alt="{{ .Site.Params.logo_img_alt }}">
+    </a>
+
+    <button class="hamburger hamburger--collapse" type="button" id="menuBurger">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <nav class="nav" id="headerNavigation">
+        {{ if ne .Site.Language.Lang $defLang }}
+        <a href="/{{.Site.Language.Lang }}/#top">{{ .Site.Params.header_menu_1 }}</a>
+        <a href="/{{.Site.Language.Lang }}/#path">{{ .Site.Params.header_menu_2 }}</a>
+        <a href="/{{.Site.Language.Lang }}/#partners">{{ .Site.Params.header_menu_3 }}</a>
+        <a href="/{{.Site.Language.Lang }}/#prices">{{ .Site.Params.header_menu_4 }}</a>
+        <a href="/{{.Site.Language.Lang }}/#reviews">{{ .Site.Params.header_menu_5 }}</a>
+        <a href="/{{.Site.Language.Lang }}/#contacts">{{ .Site.Params.header_menu_6 }}</a> {{ else }}
+        <a href="/#top">{{ .Site.Params.header_menu_1 }}</a>
+        <a href="/#path">{{ .Site.Params.header_menu_2 }}</a>
+        <a href="/#partners">{{ .Site.Params.header_menu_3 }}</a>
+        <a href="/#prices">{{ .Site.Params.header_menu_4 }}</a>
+        <a href="/#reviews">{{ .Site.Params.header_menu_5 }}</a>
+        <a href="/#contacts">{{ .Site.Params.header_menu_6 }}</a> {{ end }}
+    </nav>
+
+    <nav class="nav" id="languageNavigation">
+        <a href="/en/">ENG</a>
+        <a href="/ru/">RUS</a>
+        <a href="/ua/">UKR</a>
+    </nav>
+
+</header>
+
+<nav class="menu hidden" id="navigation">
+    {{ if ne .Site.Language.Lang $defLang }}
+    <a href="/{{.Site.Language.Lang }}/#top">{{ .Site.Params.header_menu_1 }}</a>
+    <a href="/{{.Site.Language.Lang }}/#path">{{ .Site.Params.header_menu_2 }}</a>
+    <a href="/{{.Site.Language.Lang }}/#partners">{{ .Site.Params.header_menu_3 }}</a>
+    <a href="/{{.Site.Language.Lang }}/#prices">{{ .Site.Params.header_menu_4 }}</a>
+    <a href="/{{.Site.Language.Lang }}/#reviews">{{ .Site.Params.header_menu_5 }}</a>
+    <a href="/{{.Site.Language.Lang }}/#contacts">{{ .Site.Params.header_menu_6 }}</a> {{ else }}
+    <a href="/#top">{{ .Site.Params.header_menu_1 }}</a>
+    <a href="/#path">{{ .Site.Params.header_menu_2 }}</a>
+    <a href="/#partners">{{ .Site.Params.header_menu_3 }}</a>
+    <a href="/#prices">{{ .Site.Params.header_menu_4 }}</a>
+    <a href="/#reviews">{{ .Site.Params.header_menu_5 }}</a>
+    <a href="/#contacts">{{ .Site.Params.header_menu_6 }}</a> {{ end }}
+    <br>
+    <a href="/en/">ENG</a>
+    <a href="/ru/">RUS</a>
+    <a href="/ua/">UKR</a>
+</nav>

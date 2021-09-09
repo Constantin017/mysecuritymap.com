@@ -1,0 +1,24 @@
+.page {
+    padding: 1em;
+    text-align: left;
+    font-size: 1em;
+}
+
+.page .title {
+    margin: 0 0 1em 0;
+    font-size: 3em;
+    text-align: center;
+}
+
+.page .stats {
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.page .content {
+    max-width: 40rem;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.4;
+    padding: 5rem 0;
+}

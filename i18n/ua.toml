@@ -1,0 +1,6 @@
+[wordCount]
+other = "Дана статя має {{ .WordCount }} слів."
+
+[readingTime]
+one = "Одна хвилина на читання"
+other = "{{.Count}} хвилин на читання"

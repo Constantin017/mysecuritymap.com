@@ -1,0 +1,20 @@
+.contacts {
+    padding: 6em 1em;
+}
+.contacts header {
+    margin-bottom: 1em;
+}
+.contacts .content {
+    max-width: 25em;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.4;
+ }
+.contacts .content p {
+    font-weight: bolder;
+    text-align: left;
+}
+.contacts .content ul{
+    list-style: none;
+    text-align: left;
+}

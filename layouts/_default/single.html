@@ -1,0 +1,30 @@
+{{ define "main" }} {{ if .Params.images }} {{ $desktop := index .Params.images 1 }} {{ $mobile := index .Params.images 0 }}
+
+<section class="hero">
+    <picture>
+        <source alt="{{ .Title }}" srcset="{{ $desktop }}" media="(max-width: 800px)" alt="{{ .Title }}">
+        <img alt="{{ .Title }}" src="{{ $mobile }}" alt="{{ .Title }}">
+    </picture>
+</section>
+{{ end }}
+
+<section class="page">
+    <div class="content">
+        <h1 class="title">{{ .Title }}</h1>
+        {{/*
+        <span class="stats">{{ i18n "readingTime" .ReadingTime }}</span>
+        <br>
+        <span class="stats">{{ i18n "wordCount" . }}</span>
+        <br>
+         */}}
+        {{ .Content }}
+    </div>
+</section>
+
+{{ if .Params.hot }}
+<section class="page wow fadeIn">
+    <div class="content center zero-top">
+        <div class="button" id="btnActiveConsultForm">{{ .Site.Params.main_button }}</div>
+    </div>
+</section>
+{{ end }} {{- partial "ask.html" . -}} {{- partial "forms.html" . -}} {{ end }}

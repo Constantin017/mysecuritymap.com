@@ -1,0 +1,4 @@
+<header id="hot" class="wow fadeIn">
+    {{ range .Site.AllPages }} {{ if .Params.hot }}
+    <a href="{{ .Permalink }}">{{ .Params.alert }}</a> {{end}}{{end}}
+</header>

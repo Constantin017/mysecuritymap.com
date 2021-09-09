@@ -1,0 +1,12 @@
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.zero-top {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}

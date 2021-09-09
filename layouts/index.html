@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+<section class="main wow fadeIn">
+    <header>
+        <h1>
+            <span class="column">{{ .Site.Params.header_h1_word_1 }}</span>{{ .Site.Params.header_h1_word_2 }}<br>
+            <span class="sub">{{ .Site.Params.header_h1_word_3 }}</span><span class="accent">{{ .Site.Params.header_h1_word_4 }}</span><br>
+            <span class="sub">{{ .Site.Params.header_h1_word_5 }}</span>
+        </h1>
+    </header>
+    <div class="content">
+        <div class="button" id="btnActiveConsultForm">{{ .Site.Params.main_button }}</div>
+    </div>
+</section>
+
+<section class="about-us wow fadeIn">
+    <header>{{ .Site.Params.section_header_1 }}</header>
+
+    <div class="about-card__list">
+        <div class="about-card">
+            <div class="about-card__header">{{ .Site.Params.about_us_header_1 }}</div>
+            <div class="about-card__body">{{ .Site.Params.about_us_body_1 }}</div>
+        </div>
+
+        <div class="about-card">
+            <div class="about-card__header">{{ .Site.Params.about_us_header_2 }}</div>
+            <div class="about-card__body">{{ .Site.Params.about_us_body_2 }}</div>
+        </div>
+
+        <div class="about-card">
+            <div class="about-card__header">{{ .Site.Params.about_us_header_3 }}</div>
+            <div class="about-card__body">{{ .Site.Params.about_us_body_3 }}</div>
+        </div>
+
+        <div class="about-card">
+            <div class="about-card__header">{{ .Site.Params.about_us_header_4 }}</div>
+            <div class="about-card__body">{{ .Site.Params.about_us_body_4 }}</div>
+        </div>
+
+    </div>
+</section>
+
+
+<a name="path"></a>
+<section class="path wow fadeIn">
+    <header>{{ .Site.Params.section_header_2 }}</header>
+
+    <div class="content">
+
+        <ul>
+            <li class="wow slideInRight">
+                <span>1</span>
+                <header>{{ .Site.Params.path_header_1 }}</header>
+                <p>{{ .Site.Params.path_body_1 }}</p>
+            </li>
+
+            <li class="wow slideInRight">
+                <span>2</span>
+                <header>{{ .Site.Params.path_header_2 }}</header>
+                <p>{{ .Site.Params.path_body_2 }}</p>
+            </li>
+
+            <li class="wow slideInRight">
+                <span>3</span>
+                <header>{{ .Site.Params.path_header_3 }}</header>
+                <p>{{ .Site.Params.path_body_3 }}</p>
+            </li>
+
+            <li class="wow slideInRight">
+                <span>4</span>
+                <header>{{ .Site.Params.path_header_4 }}</header>
+                <p>{{ .Site.Params.path_body_4 }}</p>
+            </li>
+
+            <li class="wow slideInRight">
+                <span>5</span>
+                <header>{{ .Site.Params.path_header_5 }}</header>
+                <p>{{ .Site.Params.path_body_5 }}</p>
+            </li>
+
+            <li class="wow slideInRight">
+                <span>6</span>
+                <header>{{ .Site.Params.path_header_6 }}</header>
+                <p>{{ .Site.Params.path_body_6 }}</p>
+            </li>
+
+            <li class="wow slideInRight">
+                <span>7</span>
+                <header>{{ .Site.Params.path_header_7 }}</header>
+                <p>{{ .Site.Params.path_body_7 }}</p>
+            </li>
+        </ul>
+
+        <div id="btnActiveTestForm" class="button">{{ .Site.Params.path_button }}</div>
+    </div>
+</section>
+
+{{- partial "partners" . -}} {{- partial "prices.html" . -}} {{- partial "reviews.html" . -}} {{- partial "contact.html" . -}} {{- partial "ask.html" . -}} {{- partial "forms.html" . -}}
+
+<a id="gotop" class="non-select">&uarr;</a> {{ end }}

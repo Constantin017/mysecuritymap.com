@@ -1,0 +1,7 @@
+<section class="main wow fadeIn">
+    <header>{{ .Site.Params.section_header_6 }}</header>
+    <div class="content">
+        {{ range .Pages }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a> {{ end }}
+    </div>
+</section>

@@ -1,0 +1,6 @@
+[wordCount]
+other = "Данная статья имеет {{ .WordCount }} слов."
+
+[readingTime]
+one = "Одна минута на прочтение."
+other = "{{.Count}} минут на прочтение."

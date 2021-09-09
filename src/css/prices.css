@@ -1,0 +1,111 @@
+.prices .content {
+  max-width: 1200px;
+}
+
+.prices__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0;
+  justify-content: space-between;
+  align-content: space-between;
+  list-style: none;
+}
+
+.prices__image {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 400px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+
+.prices__card {
+  box-sizing: border-box;
+  margin: 0 auto 30px;
+  padding: 40px 20px 50px;
+  width: auto;
+  min-width: 320px;
+  max-width: 450px;
+  height: auto;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 5px 34.2px 3.8px rgba(21, 21, 21, 0.03);
+  background-color: #fff;
+}
+
+.prices__type {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  border-radius: 0.5em;
+  color: #343a3e;
+  background-color: #f2f5fc;
+  text-transform: uppercase;
+}
+
+.prices__header {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 1em 0 0 0;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.prices__description {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 0 1em;
+  margin: 1em 1em 0 1em;
+}
+
+.prices__price {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 3;
+  color: #4786ff;
+}
+
+.prices__button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  min-width: 300px;
+  width: auto;
+  min-height: 4rem;
+  height: auto;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  line-height: 2;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 19px 1px rgba(88, 255, 144, 0.2);
+  background-image: linear-gradient(to top, #3ac569, #3acc6c);
+  color: #fff;
+}

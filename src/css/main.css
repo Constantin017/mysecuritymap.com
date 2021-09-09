@@ -1,0 +1,54 @@
+.main {
+  padding: 80px 20px;
+}
+.main header {
+  padding: 0;
+  margin: 0;
+  font-size: 42px;
+}
+
+.main header h1{
+  font-size: inherit;
+  text-align:left;
+  margin: 0 auto 3rem;
+  display: inline-block;
+  max-width: 700px;
+}
+
+.main header h1 span {
+  display: inline-block;
+  font-size: inherit;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0 0 5px 0;
+  padding: 5px;
+}
+
+.main header h1 span.column {
+  max-width: 330px;
+}
+
+.main header h1 span.sub {
+  color: white;
+  background-color: #2e68f7;
+  max-width: 280px;
+  width: auto;
+}
+
+.main header h1 span.accent {
+  color: white;
+  background-color: #3ac569;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .main {
+    padding: 40px 20px;
+  }
+  .main header {
+    padding: 0;
+    margin: 0;
+    font-size: 38px;
+  }
+}

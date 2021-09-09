@@ -1,0 +1,75 @@
+<footer id="bottom">
+
+    <div class="bottom-grid">
+        <div class="column bottom-grid__links">
+            <header class="column__header">{{ $.Site.Params.footer_grid_header_1 }}</header>
+            <ul class="column__list">
+
+                {{ if ne .Site.Language.Lang "en" }}
+                <li><a class="column__link" href="/{{.Site.Language.Lang }}/#path">{{ .Site.Params.header_menu_2 }}</a></li>
+                <li><a class="column__link" href="/{{.Site.Language.Lang }}/#partners">{{ .Site.Params.header_menu_3 }}</a></li>
+                <li><a class="column__link" href="/{{.Site.Language.Lang }}/#prices">{{ .Site.Params.header_menu_4 }}</a></li>
+                <li><a class="column__link" href="/{{.Site.Language.Lang }}/#reviews">{{ .Site.Params.header_menu_5 }}</a></li>
+                <li><a class="column__link" href="/{{.Site.Language.Lang }}/#contacts">{{ .Site.Params.header_menu_6 }}</a></li>
+                {{ else }}
+                <li><a class="column__link" href="/#path">{{ $.Site.Params.header_menu_2 }}</a></li>
+                <li><a class="column__link" href="/#partners">{{ $.Site.Params.header_menu_3 }}</a></li>
+                <li><a class="column__link" href="/#prices">{{ $.Site.Params.header_menu_4 }}</a></li>
+                <li><a class="column__link" href="/#reviews">{{ $.Site.Params.header_menu_5 }}</a></li>
+                <li><a class="column__link" href="/#contacts">{{ $.Site.Params.header_menu_6 }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+
+        <div class="column bottom-grid__client">
+            <header class="column__header">{{ $.Site.Params.footer_grid_header_2 }}</header>
+            <ul class="column__list">
+                <li><a class="column__link" href="https://mysmap.com/faq">{{ $.Site.Params.footer_links_1 }}</a></li>
+                <li><a class="column__link" href="https://mysmap.com/login">{{ $.Site.Params.footer_links_2 }}</a></li>
+                <li><a class="column__link" href="https://mysmap.com/payment/">{{ $.Site.Params.footer_links_3 }}</a></li>
+                <li><a class="column__link" href="https://monitor.mysmap.com/" rel="nofollow">{{ $.Site.Params.footer_links_4 }}</a></li>
+                <li><a class="column__link" href="https://t.me/mysmapbot" rel="nofollow">{{ $.Site.Params.footer_links_5 }}</a></li>
+                <li><a class="column__link" href="https://support.mysmap.com">{{ $.Site.Params.footer_links_6 }}</a></li>
+            </ul>
+        </div>
+
+        <div class="column bottom-grid__contact">
+            <header class="column__header">{{ $.Site.Params.footer_grid_header_3 }}</header>
+            <ul class="column__list">
+                <li><a class="contact" href="mail:info@mysmap.com">info@mysmap.com</a></li>
+                <li><a class="column__link" href="tel:+380991990299">099-199-02-99</a></li>
+                <li><a class="column__link" href="tel:+380661990299">066-199-02-99</a></li>
+                <li><a class="column__link" href="https://mysmap.com/page/contacts.html">{{ $.Site.Params.footer_grid_header_3 }}</a></li>
+            </ul>
+        </div>
+
+        <div class="column bottom-grid__social">
+            <header class="column__header">{{ $.Site.Params.footer_grid_header_4 }}</header>
+            <ul class="column__list">
+                <li>
+                    <a class="column__link" target="_blank" rel="nofollow" href="https://www.youtube.com/channel/UCFIzkLSEdKD5OEcAqMOJ3kA">Youtube</a>
+                </li>
+                <li>
+                    <a class="column__link" target="_blank" rel="nofollow" href="https://instagram.com/mysecuritymap">Instagram</a>
+                </li>
+                <li>
+                    <a class="column__link" target="_blank" rel="nofollow" href="https://facebook.com/mysmapcom">Facebook</a>
+                </li>
+                <li>
+                    <a class="column__link" target="_blank" rel="nofollow" href="https://t.me/mysmap">Telegram</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <div class="left">
+            <p>{{ $.Site.Params.footer }}</p>
+        </div>
+        <div class="left">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+        </div>
+    </div>
+</footer>

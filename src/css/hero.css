@@ -1,0 +1,9 @@
+.hero {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+}
